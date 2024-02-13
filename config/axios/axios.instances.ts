@@ -1,8 +1,9 @@
 import { getLocalStorageProperty } from "../../src/utils/getLocalStorageProperty";
 import { AxiosBuilder } from "./axios.builder";
+import { defaultApi } from "./axios.helpers";
 
 const token = getLocalStorageProperty("user", "token");
-const baseUrl = ""; //api do backend
+const baseUrl = defaultApi();
 
 const instances = {
   public: AxiosBuilder.build()
