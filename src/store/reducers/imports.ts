@@ -1,7 +1,7 @@
-import loadingSlice from "./loading/loadingSlice";
-import sideBarSlice from "./sideBar/sideBarSlice";
+import loading from "./loading/slice";
+import sideBar from "./sideBar/slice";
 
 export {
-  loadingSlice,
-  sideBarSlice,
+  loading,
+  sideBar,
 };
