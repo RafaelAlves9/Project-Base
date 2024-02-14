@@ -19,6 +19,7 @@ export default defineConfig({
       "@shared": "/src/app/shared",
       "@store": "/src/Store",
       "@assets": "/src/assets",
+      "@extensions": "/src/extensions",
       "@src": "/src"
     },
   },

@@ -1,10 +1,10 @@
-import { defaultApi } from "@config/axios/axios.helpers";
+import Exemple from "@pages/Exemple/exemple.base";
 
 
 const NotFound = () => {
-    defaultApi()
+    
     return(
-        <h1>NotFound</h1>
+        <Exemple isOpen={false}/>
     );
 };
 

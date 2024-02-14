@@ -1,14 +1,11 @@
 import { useForm } from "react-hook-form";
-import { ExempleFormTypes, exempleSchema } from "./exemple.types";
+import { ControllerProps, ExempleFormTypes, exempleSchema } from "./exemple.types";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useEffect } from "react";
 
-const UseExempleController = () => {
+const UseExempleController = (props: ControllerProps) => {
   
   const {
-    control,
-    watch,
-    formState: { errors },
-    handleSubmit
   } = useForm<ExempleFormTypes>({
     defaultValues: {
       valor: "",
@@ -19,10 +16,19 @@ const UseExempleController = () => {
   const onSubmit = async () => {
     
   };
+
+  useEffect(() => {
+    console.log(props)
+  }, []);
   
   return {
-    actions: {},
-    states: {},
+    actions: {
+      onSubmit
+    },
+    states: {
+      isOpen: props.isOpen
+    },
+    setters: {}
   };
 };
 

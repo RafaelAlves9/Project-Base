@@ -35,6 +35,7 @@
       "@shared/*": ["src/app/shared/*"],
       "@store/*": ["src/Store/*"],
       "@assets/*": ["src/assets/*"],
+      "@extensions/*": ["src/extensions/*"],
     },
   },
   "references": [{ "path": "./tsconfig.node.json" }]
